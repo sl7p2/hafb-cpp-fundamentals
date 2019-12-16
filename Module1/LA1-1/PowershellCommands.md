@@ -1,26 +1,29 @@
 
-## Terminal Commands
-Note:  ($ means terminal prompt)
+## C++ Environment in Windows
+- VSCode  https://code.visualstudio.com/   // code editor
+- git   https://git-scm.com/        // for source control
+- cmake    https://cmake.org/     // to work with project
+- g++ (mingw) http://www.mingw.org/  // compiler for windows. You need to add binaries to PATH env. variable
+- github.com  http://github.com  // for cloud service
+
+## Terminal Commands 
+Note: ($ means terminal prompt):
 ```bash
-$ ls            # list folder
-$ cd <dest>     # change directories
-$ cd ..         # .. parent directory
+$   ls          # list folder 
+$ cd  <dest>  	# change directories
+$ cd   ..		# .. parent directory 
 $ pwd           # show present working directory
-$ rm <name>  
-
-
-
-
-
-```bash
-.   #(one dot) present working
-
-
+$ rm <name>     # remove/delete file/directory
+```
+## File System
+``` bash
+.    # (one dot) present working directory
+..   # (two dots) parent directory
+```
 ## C++ Basics
-- File extension: ".cpp"
+- File extension: `.cpp`
 
-
-
+## g++ Compiler
 ```bash
 # To compile
 # -o for output file name
@@ -36,14 +39,20 @@ using namespace std;
 
 int main()
 {
-    cout << "\nData Type Bytes"
-        << "\n------- ----"  
-        << "\nint         "  << sizeof(int)  // integer
-        << "\nchar        "  << sizeof(char) // characters 1 by
-        << "\nlong        "  << sizeof(long) // long integers
-        << "\nbool        "  << sizeof(bool) // boolean
-        << endl;
     return 0;
-
 }
+```
+## Plugins and Doxygen documentation
+```cpp
+// Add C/C++ Intellisense
+// Add Code Spell Extension 
+// Add Doxygen Documentation Generator
+// Add Mark Down All In One
+// Add CMake
+// Add CMake Tools
+```
+
+```cpp
+To generate Doxygen documentation: 
+// Run /** and <Enter>
 ```
