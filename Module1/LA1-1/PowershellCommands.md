@@ -56,3 +56,13 @@ int main()
 To generate Doxygen documentation: 
 // Run /** and <Enter>
 ```
+
+## g++ Compiler for 2 files
+for example, if you have a library under the `functions.cpp` and `functions.h` files, and you have a driver under `run_functions.cpp` you need to compile as follows:
+```bash
+# To compile, list ALL source (cpp) files
+# -o for output file name
+$ g++ functions.cpp run_functions.cpp
+-o run_functions
+# To run
+$ 
