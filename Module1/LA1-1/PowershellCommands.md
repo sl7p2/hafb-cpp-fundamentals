@@ -14,6 +14,7 @@ $ cd  <dest>  	# change directories
 $ cd   ..		# .. parent directory 
 $ pwd           # show present working directory
 $ rm <name>     # remove/delete file/directory
+$ mkdir <name>  # create directory/folder
 ```
 ## File System
 ``` bash
@@ -21,7 +22,8 @@ $ rm <name>     # remove/delete file/directory
 ..   # (two dots) parent directory
 ```
 ## C++ Basics
-- File extension: `.cpp`
+- Source File extension: `.cpp`
+- Header files: `.h`
 
 ## g++ Compiler
 ```bash
@@ -62,7 +64,14 @@ for example, if you have a library under the `functions.cpp` and `functions.h` f
 ```bash
 # To compile, list ALL source (cpp) files
 # -o for output file name
-$ g++ functions.cpp run_functions.cpp
--o run_functions
+$ g++ functions.cpp run_functions.cpp -o run_functions
 # To run
 $ 
+
+
+### CMake
+To build a project we need all the rules to be set under`CMakeLists.txt` file.
+- Create a build folder: `$ mkdir build`
+- Go to the build dir: `$ cd build`
+- Run cmake: `$ cmake .. -G "MinGW Makefiles"` The `..` is because your CMakeLists.txt is one folder uo.
+- Build or compile your code: `$ cmake --build .The . means to build in in pwd.`
